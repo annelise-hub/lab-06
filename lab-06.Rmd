@@ -54,7 +54,7 @@ ggplot(data = diamonds,
 diamonds <- diamonds %>%
   mutate(table_mm = table_pct * width_mm / 100)
 
-# Overall table_mm arithmetic mean?
+# Overall table_mm arithmetic mean? 3.30 mm
 
 
 
@@ -62,7 +62,14 @@ diamonds <- diamonds %>%
 
 
 # table_mm arithmetic mean within each clarity category
-
+ I1               3.91
+2 SI2              3.71
+3 SI1              3.40
+4 VS2              3.25
+5 VS1              3.20
+6 VVS2             2.98
+7 VVS1             2.83
+8 IF               2.82
 
 
 
@@ -70,7 +77,7 @@ diamonds <- diamonds %>%
 
 ```
 
-_Add your comment here_
+
 
 ```{r}
 # calculate the arithmetic mean across all numeric variables
