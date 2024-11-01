@@ -28,9 +28,21 @@ diamonds <- diamonds %>% rename(
 
 ```{r}
 # Do some preliminary investigations & cleaning
+count(diamonds, color)
 
+arrange(diamonds, price)
 
+summarise(diamonds, avg_price = mean(price))
 
+ggplot(data = diamonds,
+        mapping = aes(x = carat,
+                      y = price,
+                      colour = color)) +
+     geom_point() +
+     labs(title = "carat vs price",
+          x = "carat", 
+          y = "price",
+          colour = "color")
 
 ```
 
